@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Interactive card details form</title>
+
+</head>
+
+<body>
+
+
+  <div id="container-card-info">
+    <section class="card">
+
+      <div class="card-front"> <img src="./assets/images/bg-card-front.png" alt=""> </div>
+      <div class="card-back"> <img src="./assets/images/bg-card-back.png" alt=""> </div>
+
+
+    </section>
+
+    <section class="inputs-card">
+
+      <form id="form-card" action="/action_page.php">
+        <label for="name">
+          <p>Cardholder Name</p>
+        </label>
+        <input type="text" id="name" name="name-card" placeholder="Your name.." value="sdsd">
+
+
+        <label for="">
+          <p>Card Number</p>
+        </label>
+        <input type="number" id="card-number" name="card-number" max="16" placeholder="1234 5678 9123 0000">
+
+
+        <div class="data-card">
+          <div class="data-month-year">
+            <label for="">
+              <p>Exp. Date (MM/YY)</p>
+            </label>
+            <div>
+              <input id="info-month" type="number" max="2" placeholder="MM">
+              <input id="info-year" type="number" max="2" placeholder="YY">
+            </div>
+          </div>
+
+          <div class="data-cvc">
+            <label for="">
+              <p>CVC</p>
+            </label>
+            <div>
+              <input id="info-month" type="number" max="3" placeholder="123">
+            </div>
+          </div>
+        </div>
+
+        <button id="button-confirm" value="Confirm" type="submit">
+          <p>Aceptar</p>
+        </button>
+      </form>
+
+    </section>
+
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
