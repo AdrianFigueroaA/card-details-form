@@ -7,6 +7,8 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="./assets/js/main.js"></script>
+
   <title>Interactive card details form</title>
 
 </head>
@@ -23,19 +25,20 @@
 
     </section>
 
+
     <section class="inputs-card">
 
-      <form id="form-card" action="/action_page.php">
+      <form id="form-card">
         <label for="name">
           <p>Cardholder Name</p>
         </label>
-        <input type="text" id="name" name="name-card" placeholder="Your name.." value="sdsd">
+        <input type="text" id="name-card" name="name" placeholder="Your name.." value="" required>
 
 
         <label for="">
           <p>Card Number</p>
         </label>
-        <input type="number" id="card-number" name="card-number" max="16" placeholder="1234 5678 9123 0000">
+        <input type="number" id="card-number" name="card-number" placeholder="1234 5678 9123 0000" required>
 
 
         <div class="data-card">
@@ -44,8 +47,8 @@
               <p>Exp. Date (MM/YY)</p>
             </label>
             <div>
-              <input id="info-month" type="number" max="2" placeholder="MM">
-              <input id="info-year" type="number" max="2" placeholder="YY">
+              <input id="info-month" type="number" placeholder="MM" required>
+              <input id="info-year" type="number" placeholder="YY" required>
             </div>
           </div>
 
@@ -54,7 +57,7 @@
               <p>CVC</p>
             </label>
             <div>
-              <input id="info-month" type="number" max="3" placeholder="123">
+              <input id="info-cvc" type="number" placeholder="123" required>
             </div>
           </div>
         </div>
@@ -62,13 +65,20 @@
         <button id="button-confirm" value="Confirm" type="submit">
           <p>Aceptar</p>
         </button>
+        <p class="texto_tarjeta">aca</p>
+        <p class="texto_tarjeta2">aca2</p>
+        <p class="texto_tarjeta3">aca3</p>
+        <p class="texto_tarjeta4">aca4</p>
+        <p class="texto_tarjeta5">aca5</p>
+
+
       </form>
+
 
     </section>
 
   </div>
 
-  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
