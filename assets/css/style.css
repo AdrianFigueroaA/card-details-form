@@ -36,18 +36,51 @@ body {
   width: 40%;
   background-color: hsl(228, 45%, 44%);
 }
-
 .inputs-card {
   display: flex;
   width: 60%;
 }
 
 .card-front {
-  margin-left: 100px;
+  background-image: url(../images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 55px;
+  top: 50px;
 }
 
 .card-back {
-  margin-left: 130px;
+  background-image: url(../images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  position: relative;
+  left: 75px;
+}
+
+.text_card {
+  font-size: 1.2em;
+  color: #fff;
+  font-family: "Gotham-Bold";
+}
+
+.card-front > div {
+  display: flex;
+  justify-content: space-around;
+}
+.texto_number {
+  display: flex;
+  justify-content: center;
+}
+.texto_cvc {
+  position: relative;
+  top: 115px;
+  left: 375px;
 }
 
 .data-card {
