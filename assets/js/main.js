@@ -1,5 +1,3 @@
-// const formCard = document.querySelector("#form-card");
-
 let nameCard = document.getElementById("name-card");
 let numberCard = document.getElementById("card-number");
 let infoMonth = document.getElementById("info-month");

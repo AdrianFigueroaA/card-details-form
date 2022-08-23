@@ -33,35 +33,66 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
-  background-color: hsl(228, 45%, 44%);
+  width: 45%;
+  /* background-color: hsl(228, 45%, 44%); */
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  gap: 15px;
 }
 .inputs-card {
   display: flex;
-  width: 60%;
+  width: 55%;
 }
 
 .card-front {
-  background-image: url(../images/bg-card-front.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
-  left: 55px;
-  top: 50px;
+  left: 50px;
+  top: 0;
+}
+.texto_number {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.texto-card {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-back {
+  position: relative;
+  left: 130px;
+  top: 0;
+}
+/* .card-front {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 400px;
+  height: 400px;
+  left: 100px;
+  top: 100px;
+} */
+
+/* .card-back {
+  position: relative;
   background-image: url(../images/bg-card-back.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
-  position: relative;
-  left: 75px;
-}
+  max-width: 400px;
+  height: 400px;
+  left: 140px;
+} */
 
 .text_card {
   font-size: 1.2em;
@@ -69,20 +100,21 @@ body {
   font-family: "Gotham-Bold";
 }
 
-.card-front > div {
+/* .card-front > div {
   display: flex;
   justify-content: space-around;
-}
-.texto_number {
+} */
+/* .texto_number {
   display: flex;
   justify-content: center;
-}
+} */
 .texto_cvc {
   position: relative;
-  top: 115px;
-  left: 375px;
+  left: 330px;
+  bottom: 140px;
 }
 
+/* ESTILOS INPUTS */
 .data-card {
   display: flex;
   justify-content: space-between;
