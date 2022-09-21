@@ -17,6 +17,7 @@ body {
 
 #container-card-info {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -33,21 +34,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45%;
-  /* background-color: hsl(228, 45%, 44%); */
+  width: 100%;
   background-image: url(../images/bg-main-desktop.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   gap: 15px;
 }
 .inputs-card {
   display: flex;
-  width: 55%;
+  width: 100%;
 }
 
 .card-front {
-  position: relative;
-  left: 50px;
+  position: unset;
   top: 0;
 }
 .texto_number {
@@ -63,36 +62,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 150px;
 }
 
 .card-back {
   position: relative;
-  left: 130px;
   top: 0;
 }
-/* .card-front {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(../images/bg-card-front.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 400px;
-  height: 400px;
-  left: 100px;
-  top: 100px;
-} */
 
-/* .card-back {
-  position: relative;
-  background-image: url(../images/bg-card-back.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 400px;
-  height: 400px;
-  left: 140px;
-} */
+.container-text-year-month {
+  display: flex;
+}
 
 .text_card {
   font-size: 1.2em;
@@ -100,14 +80,6 @@ body {
   font-family: "Gotham-Bold";
 }
 
-/* .card-front > div {
-  display: flex;
-  justify-content: space-around;
-} */
-/* .texto_number {
-  display: flex;
-  justify-content: center;
-} */
 .texto_cvc {
   position: relative;
   left: 330px;
@@ -149,4 +121,36 @@ p {
   font-family: "Gotham-light";
   margin: 0;
   font-size: 1.2em;
+  /* color: #fff; */
+}
+
+@media (min-width: 768px) {
+  #container-card-info {
+    display: flex;
+    flex-direction: row;
+  }
+  .card-front {
+    position: relative;
+    left: 50px;
+    top: 0;
+  }
+  .card-back {
+    position: relative;
+    left: 130px;
+    top: 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    gap: 15px;
+  }
+  .inputs-card {
+    display: flex;
+    width: 55%;
+  }
 }

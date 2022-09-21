@@ -13,7 +13,9 @@ nameCard.addEventListener("keyup", (event) => {
 numberCard.addEventListener("keyup", (event) => {
   let inputNumber = event.composedPath()[0].value;
 
-  document.querySelector(".texto_number").innerHTML = inputNumber;
+  document.querySelector(".texto_number").innerHTML = inputNumber
+    .toString()
+    .replace(/\B(?=(\d{4})+(?!\d))/g, " ");
 });
 
 infoMonth.addEventListener("keyup", (event) => {
@@ -33,3 +35,7 @@ infoCvc.addEventListener("keyup", (event) => {
 
   document.querySelector(".texto_cvc").innerHTML = inputCvc;
 });
+
+function numberWithSpaces(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
